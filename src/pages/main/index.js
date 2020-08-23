@@ -13,7 +13,7 @@ export default class Main extends Component {
 
     loadItens = async () => {
         const result = await api.get('/itens');
-        this.setState({itens: result.data.docs});;
+        this.setState({itens: result.data.docs});
     };
 
     render(){
