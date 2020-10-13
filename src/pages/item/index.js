@@ -24,9 +24,11 @@ export default class Item extends Component {
 
         return(
             <div className="item-info">
-                <strong>{ item.titulo }</strong>
-                <p>{ item.dataCadastro }</p>
-                <Link to={`/`}>Voltar</Link>
+                <article key={ item._id }>
+                    <strong>{ item.titulo }</strong>
+                    <p>{ item.dataCadastro }</p>
+                    <Link to={`/`}>Voltar</Link>
+                </article>
             </div>
         );
         
